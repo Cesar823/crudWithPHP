@@ -1,5 +1,7 @@
-<?php
+<!-- Conexion to db -->
+<?php include("db.php") ?>
+<?php include("includes/header.php") ?>
 
-echo "Hello world";
+    <h1>Hello</h1>
 
-?>
+<?php include("includes/footer.php") ?>

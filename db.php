@@ -1,9 +1,13 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','', 'tasks');
+// Conection with mysql
+$conn = mysqli_connect('localhost', 'root', '', 'notes');
 
+/* 
+// Connection verification
 if(isset($conn)){
-    echo "db is connected"
+    echo "db is connected";
 }
+*/
 
 ?>
