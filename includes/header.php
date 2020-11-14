@@ -6,6 +6,8 @@
     <title>Notes</title>
     <!-- Boostrap 4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Font awesome 5 -->
+    <script src="https://kit.fontawesome.com/17e0c9843c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
