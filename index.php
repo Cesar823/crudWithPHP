@@ -8,6 +8,17 @@
 <div class="container p-4">
     <div class="row">
         <div class="col-md-4">
+
+            <!-- alert -->
+            <?php if(isset($_SESSION['messaje'])) {?>
+                <div class="alert alert-<?= $_SESSION['messaje_type']; ?> alert-dismissible fade show" role="alert">
+                    <?= $_SESSION['messaje'] ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php session_unset(); } ?>
+
             <div class="card card-body">
                 <form action="save_task.php" method="POST">
                     <div class="form-group">

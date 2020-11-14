@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // Conection with mysql
 $conn = mysqli_connect('localhost', 'root', '', 'notes');
 
