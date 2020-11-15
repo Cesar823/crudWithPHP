@@ -1,7 +1,9 @@
 <?php 
 
+// conexión a db
 include("db.php");
 
+// Verificación de llegada
 if(isset($_GET['id'])){
     $id = $_GET['id'];
     $query = "SELECT * FROM tasks WHERE id = $id";
@@ -15,6 +17,7 @@ if(isset($_GET['id'])){
     }
 }
 
+// Verificación de llegada
 if(isset($_POST['update'])){
     //echo 'updating';
     $id = $_GET['id'];
@@ -23,18 +26,25 @@ if(isset($_POST['update'])){
     //echo $id;
     //echo $title;
     //echo $description;
+
+    // Consula
     $query = "UPDATE tasks SET title = '$title', description = '$description' WHERE id = $id";
     mysqli_query($conn, $query);
 
+    // Alerta en el form
     $_SESSION['messaje'] = 'Task update successfully';
     $_SESSION['messaje_type'] = 'primary';
+
+    // Redireccionamiento
     header("Location: index.php");
 }
 
 ?>
 
+<!-- Header -->
 <?php include("includes/header.php"); ?>
 
+<!-- Form -->
 <div class="container p-4">
     <div class="row">
         <div class="col-md-4 mx-auto">
@@ -53,4 +63,5 @@ if(isset($_POST['update'])){
     </div>
 </div>
 
+<!-- Footer -->
 <?php include("includes/footer.php"); ?>
